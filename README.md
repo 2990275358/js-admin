@@ -1,2 +1,2 @@
 # js-admin
-原生js完成的管理系统
+原生js完成的管理系统，封装了RenderTable和RenderForm两个类，分别用来渲染表格和form表单的，还封装了DataModel来帮助我模拟数据操作，以至于能让我实现简单的增删改查
