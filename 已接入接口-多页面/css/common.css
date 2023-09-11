@@ -1,0 +1,253 @@
+:root {
+  --subjectColor: #3f96ff;
+  --item: #23324a;
+  --navigation: #447496;
+  --itemChild: #3c4c6a;
+  --delHover: rgba(255, 0, 0, 0.582);
+  --del: red;
+  --addHover: #3f95ff9f;
+  --cancelHover: #d8d8d89c;
+  --borderColor: #d8d8d8;
+  --tableItem: #b1cbdb;
+}
+body {
+  margin: 0px;
+  background-color: #eeeeee;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.small-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.normal-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.middle-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.none {
+  display: none !important;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.woff2") format("woff2"),
+    url("../font/iconfont.woff") format("woff"),
+    url("../font//iconfont.ttf") format("truetype");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tupian:before {
+  content: "\e6e5";
+}
+
+.icon-jurassic_user:before {
+  content: "\e6a4";
+}
+
+.icon-dingdan_dingdanliebiao:before {
+  content: "\e787";
+}
+
+.icon-shangpin:before {
+  content: "\e9fc";
+}
+
+.icon-bianjishuru:before {
+  content: "\e8cc";
+}
+
+.icon-shanchu:before {
+  content: "\e615";
+}
+
+.icon-jinggao:before {
+  content: "\e61e";
+}
+
+.icon-shibai:before {
+  content: "\e8c5";
+}
+
+.icon-chenggong:before {
+  content: "\e61c";
+}
+
+/* 表格 */
+.my-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.my-th,
+.my-td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 50px;
+  max-width: 150px;
+  text-align: center;
+  border: 1px solid var(--borderColor);
+  padding: 0 10px;
+  cursor: pointer;
+}
+tbody .my-tr:hover {
+  background-color: var(--navigation) !important;
+}
+
+/* 按钮 */
+.my-btn {
+  min-width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+.del {
+  background-color: var(--del);
+}
+.del:hover {
+  background-color: var(--delHover);
+}
+.add {
+  background-color: var(--subjectColor);
+}
+.add:hover {
+  background-color: var(--addHover);
+}
+.kuang {
+  border: 1px solid var(--borderColor);
+  color: #333;
+}
+.kuang:hover {
+  background-color: var(--cancelHover);
+}
+.t-btn {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.t-btn-del {
+  color: var(--del);
+}
+.t-btn-del:hover {
+  color: var(--delHover);
+}
+.t-btn-edt {
+  color: var(--subjectColor);
+}
+.t-btn-edt:hover {
+  color: var(--addHover);
+}
+
+.dialog {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.dialog-box {
+  min-width: 400px;
+  min-height: 80px;
+  flex-wrap: wrap;
+}
+.dialog-content {
+  width: 100%;
+  min-height: 30px;
+}
+.dialog-title {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1em;
+}
+.dialog-btn {
+  width: 100%;
+  height: 40px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* form表单 */
+.label {
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+.input {
+  flex: 1;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+
+.line {
+  height: 55px;
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  align-items: center;
+  position: relative;
+}
+.err {
+  border: 1px solid red;
+}
+.hint {
+  position: absolute;
+  top: 45px;
+  left: 110px;
+  color: red;
+  display: none;
+  font-size: 12px;
+}
+.show {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+.dialog-img {
+  min-height: 60px;
+  width: 100%;
+}
+
+/* 头像 */
+.avatar {
+  height: 120px;
+  justify-content: center;
+}
+#realBtn {
+  width: 120px;
+  height: 120px;
+  background-color: #eee;
+  background-image: url("/img/add_icon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 28px 30px;
+  border-radius: 50%;
+}

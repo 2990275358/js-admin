@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户验证</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/render-form.js"></script>
+    <script src="js/register.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navtab flex">
+        <div class="tab-btn tab-active">登录</div>
+        <div class="tab-btn">注册</div>
+      </div>
+      <div class="box register none">
+        <div class="title">[注册]</div>
+        <div class="line avatar">
+          <label id="realBtn" class="btn-info">
+            <input
+              type="file"
+              id="fileInput"
+              name="file"
+              accept="image/*"
+              style="left: -9999px; position: absolute"
+            />
+          </label>
+        </div>
+      </div>
+      <div class="box login none">
+        <div class="title">[登录]</div>
+      </div>
+    </div>
+  </body>
+</html>

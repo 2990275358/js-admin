@@ -1,0 +1,33 @@
+.main {
+  background-color: #fff;
+  padding: 0px 20px 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.navbar {
+  height: 60px;
+}
+.my-table-box {
+  width: 100%;
+  justify-content: center;
+}
+.filter {
+  width: 100%;
+  display: flex;
+}
+.line {
+  margin-right: 10px;
+}
+
+.btn-info {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-color: var(--borderColor);
+  background-image: url("/img/add_icon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 20px 22px;
+  border-radius: 20px;
+  margin-right: 10px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>商品管理系统</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- 菜单 -->
+      <div class="menu-box">
+        <div class="menu-title">学生信息管理系统</div>
+      </div>
+      <!-- 顶部状态栏 -->
+      <div class="page-status flex">
+        <div class="flex">
+          <img
+            class="page-avatar none"
+            src="/img/editor_icon.png"
+            draggable="false"
+          />
+          <span class="user-name">未登录</span>
+        </div>
+        <span class="loginout">退出</span>
+      </div>
+      <div class="navigation flex"></div>
+      <!-- 内容 -->
+      <div class="page-content">
+        <iframe class="iframe" src="user.html"></iframe>
+      </div>
+    </div>
+    <script type="module">
+      import "./js/index.js";
+    </script>
+  </body>
+</html>

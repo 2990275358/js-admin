@@ -1,0 +1,8 @@
+.filter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.line {
+  margin-right: 10px;
+}

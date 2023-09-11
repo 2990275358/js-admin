@@ -1,0 +1,123 @@
+.box {
+  width: 561px;
+  min-height: 310px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -38%);
+  padding: 0px 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* tabbar */
+.navtab {
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 45px;
+  background-color: #ffffff;
+  align-items: flex-end;
+}
+.tab-btn {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #a4a4a4;
+  font-family: 思源黑体;
+  font-size: 14px;
+  font-weight: 350;
+  color: #ffffff;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tab-active {
+  background: var(--subjectColor) !important;
+}
+.line {
+  height: 70px;
+}
+.line,
+.title {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  align-items: center;
+  position: relative;
+}
+.title {
+  justify-content: center;
+  font-family: 思源黑体;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+
+  /* 系统主色 */
+  color: var(--subjectColor);
+}
+.btnbox {
+  justify-content: center;
+}
+.label {
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+}
+.input {
+  flex: 1;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+}
+.err {
+  border: 1px solid red;
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--subjectColor);
+  font-family: 思源黑体;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.hint {
+  position: absolute;
+  top: 51px;
+  left: 92px;
+  color: red;
+  display: none;
+  font-size: 12px;
+}
+.show {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translateX(-50%);
+}
+
+/* 头像 */
+.avatar {
+  height: 120px;
+  justify-content: center;
+}
+#realBtn {
+  width: 120px;
+  height: 120px;
+  background-color: #eee;
+  background-image: url("/img/add_icon.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 28px 30px;
+  border-radius: 50%;
+}

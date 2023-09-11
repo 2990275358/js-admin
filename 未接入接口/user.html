@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户管理</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/goods.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/render-form.js"></script>
+    <script src="js/render-table.js"></script>
+    <script src="js/user.js"></script>
+  </head>
+  <body>
+    <div class="main flex">
+      <div class="filter"></div>
+      <div class="navbar flex">
+        <div class="my-btn del">
+          <img src="img/remove_icon.png" class="middle-icon" />删除所选
+        </div>
+        <div class="my-btn add">
+          <img src="img/add_white_icon.png" class="middle-icon" />添加
+        </div>
+      </div>
+      <div class="my-table-box flex"></div>
+    </div>
+    <!-- 提示 -->
+    <dialog class="dialog hint-dialog">
+      <div class="dialog-box flex">
+        <div class="dialog-title">提示</div>
+        <div class="dialog-content">确定删除所有选择吗？</div>
+        <div class="dialog-btn flex">
+          <div class="my-btn kuang cancel">取消</div>
+          <div class="my-btn add confrim">确定</div>
+        </div>
+      </div>
+    </dialog>
+    <!-- 添加用户 -->
+    <dialog class="add-dialog dialog">
+      <div class="dialog-box flex">
+        <div class="dialog-title">添加用户</div>
+        <div class="dialog-content add-dialog-content"></div>
+        <div class="dialog-img flex">
+          <label id="imgBtn" class="btn-info">
+            <input
+              type="file"
+              id="fileInput"
+              name="file"
+              accept="image/*"
+              multiple
+              style="left: -9999px; position: absolute"
+            />
+          </label>
+        </div>
+        <div class="dialog-btn flex">
+          <div class="my-btn kuang cancel">取消</div>
+          <div class="my-btn add confrim">确定</div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
